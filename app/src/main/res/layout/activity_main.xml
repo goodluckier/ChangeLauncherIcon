@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_changeIcon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F3F6"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_switch_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_ic_launcher_round"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:elevation="0.3dp"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/rb_ic_launcher_round"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:clickable="true"
+                android:tag="rb" />
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_launcher_round" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="圆形图标" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_ic_launcher_rect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:elevation="0.3dp"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/rb_ic_launcher_rect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:clickable="true"
+                android:tag="rb" />
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_launcher_rect" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="圆角矩形图标" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_ic_launcher_default"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:elevation="0.3dp"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/rb_ic_launcher_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:clickable="true"
+                android:tag="rb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="默认矩形或系统定制图标" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_apply"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="应用"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_tips"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="1、切换后需等待10秒左右生效"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="2、切换过程中App可能会被自动关闭"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="3、某些启动器中需手动删除并重新添加桌面图标"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>
