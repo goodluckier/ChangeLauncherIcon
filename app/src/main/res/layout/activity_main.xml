@@ -106,7 +106,6 @@
         </LinearLayout>
     </LinearLayout>
 
-
     <Button
         android:id="@+id/btn_apply"
         style="@style/Widget.AppCompat.Button.Colored"
@@ -118,38 +117,5 @@
         android:text="应用"
         android:textColor="#ffffff"
         android:textSize="16sp" />
-
-    <LinearLayout
-        android:id="@+id/ll_tips"
-        android:layout_width="290dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:clickable="true"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="1、切换后需等待10秒左右生效"
-            android:textColor="#999999"
-            android:textSize="13sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="2、切换过程中App可能会被自动关闭"
-            android:textColor="#999999"
-            android:textSize="13sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="3、某些启动器中需手动删除并重新添加桌面图标"
-            android:textColor="#999999"
-            android:textSize="13sp" />
-    </LinearLayout>
 
 </LinearLayout>
